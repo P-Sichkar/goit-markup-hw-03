@@ -20,6 +20,9 @@
   --batton-filter-background-color: #f5f4fa;
   --batton-filter-text-color: #212121;
   --projects-subtitle-color: #757575;
+  --margin-title: 50px;
+  --margin-subtitle: 10px;
+  --section-padding: 94px;
 }
 
 /* --------------- */
@@ -50,9 +53,14 @@ button {
   cursor: pointer;
 }
 
+img {
+  display: block;
+}
+
 .link {
   text-decoration: none;
 }
+
 .list {
   list-style: none;
 }
@@ -62,6 +70,7 @@ button {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  outline: 1px solid red;
 }
 
 /* --------------------------PADDING-SECTION-------------------------- */
@@ -69,8 +78,21 @@ button {
 .feature,
 .team,
 .projects {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+/* --------------------------MARGIN-------------------------- */
+
+.function-title,
+.team-title,
+.filter-list {
+  margin-bottom: var(--margin-title);
+}
+
+.feature-slogan,
+.team-member {
+  margin-bottom: var(--margin-subtitle);
 }
 
 /* --------------------------LOGO-------------------------- */
@@ -85,8 +107,8 @@ button {
 }
 /* --------------------------HEADER-------------------------- */
 
-.navigation {
-  padding-top: 24px;
+.header-site {
+  padding-top: 25px;
   padding-bottom: 25px;
 }
 
@@ -138,6 +160,8 @@ button {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--hero-text-color);
+  max-width: 696px;
+  margin-bottom: 30px;
 }
 .hero-button {
   font-family: inherit;
@@ -228,6 +252,12 @@ button {
 .footer {
   font-family: 'Roboto';
   background-color: var(--footer-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.contacts {
+  margin-top: 20px;
 }
 
 .footer-tel:focus,
@@ -249,6 +279,7 @@ button {
 
 .footer-tel,
 .footer-mail {
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
