@@ -104,6 +104,7 @@ img {
 
 .navigation {
   display: flex;
+  align-items: center;
 }
 
 /* ----------LOGO---------- */
@@ -120,6 +121,8 @@ img {
 
 .navigation-list {
   display: flex;
+
+  margin-left: 93px;
 }
 
 .navigation-item:not(:last-child) {
