@@ -20,6 +20,7 @@
   --batton-filter-background-color: #f5f4fa;
   --batton-filter-text-color: #212121;
   --projects-subtitle-color: #757575;
+  --margin-foto: 30px;
   --margin-title: 50px;
   --margin-subtitle: 10px;
   --section-padding: 94px;
@@ -70,7 +71,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 /* --------------------------PADDING-SECTION-------------------------- */
@@ -227,16 +228,15 @@ img {
 }
 
 .feature-item {
-  flex-basis: calc((100%-90px) / 3);
+  flex-basis: calc(100% / 4-30px);
   margin-left: 30px;
+  min-width: 270px;
 }
 
 /* .feature-item:not(:last-child) {
   margin-right: 30px;
 }
-.feature-item {
-  width: 270px;
-} */
+
 
 .visually-hidden {
   position: absolute;
@@ -281,6 +281,16 @@ img {
   color: var(--dominant-text-color);
 }
 
+.function-list {
+  display: flex;
+  margin-left: -30px;
+}
+
+.function-item {
+  flex-basis: calc(100% / 3-30px);
+  margin-left: 30px;
+}
+
 /* --------------------------TEAM-------------------------- */
 
 .team {
@@ -293,6 +303,21 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--dominant-text-color);
+}
+
+.team-list {
+  display: flex;
+  padding-bottom: 30px;
+  margin-left: -30px;
+}
+
+.team-item {
+  flex-basis: calc(100% / 4-30px);
+  margin-left: 30px;
+}
+
+.team-member-image {
+  margin-bottom: 30px;
 }
 
 .team-member {
@@ -322,6 +347,10 @@ img {
 
 .contacts {
   margin-top: 20px;
+}
+
+.footer-contacts-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-tel:focus,
