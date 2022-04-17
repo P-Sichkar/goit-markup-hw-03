@@ -102,6 +102,10 @@ img {
   padding-bottom: 25px;
 }
 
+.navigation {
+  display: flex;
+}
+
 /* ----------LOGO---------- */
 .logo {
   text-decoration: none;
@@ -141,6 +145,13 @@ img {
 .navigation-link:hover,
 .navigation-link:focus {
   color: var(--focus-link-color);
+}
+
+.header-contacts-list {
+  display: flex;
+}
+.header-contacts-item + .header-contacts-item {
+  margin-left: 50px;
 }
 
 .header-tel:focus,
