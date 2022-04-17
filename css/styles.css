@@ -95,7 +95,14 @@ img {
   margin-bottom: var(--margin-subtitle);
 }
 
-/* --------------------------LOGO-------------------------- */
+/* --------------------------HEADER-------------------------- */
+
+.header-site {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/* ----------LOGO---------- */
 .logo {
   text-decoration: none;
   color: var(--logo-color);
@@ -105,11 +112,14 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-/* --------------------------HEADER-------------------------- */
+/*  --------  --------  --------  -------- */
 
-.header-site {
-  padding-top: 25px;
-  padding-bottom: 25px;
+.navigation-list {
+  display: flex;
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .navigation-link {
